@@ -54,7 +54,7 @@ docker compose up -d
 
 ### 3. **Set up your environment variables**
 
-Create a `.env` file in the root directory:
+Update the `.env` file in the root directory if needed:
 
 ```dotenv
 DATABASE_URL="postgresql://booklibrary:adminpass@localhost:5432/booklibrary"
@@ -75,7 +75,7 @@ npm install
 Generate the tables according to the Prisma schema.
 
 ```bash
-npx prisma migrate dev --name init
+npx prisma migrate dev
 ```
 
 *Or, if the DB is fresh and you want to re-push the schema:*
